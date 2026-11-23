@@ -1,0 +1,47 @@
+/* ==========================================================================
+   palette-showcase.css — стили только для palette.html (отчёт по палитре).
+   Не подключается на остальных страницах сайта.
+   ========================================================================== */
+
+.palette-page { padding: var(--space-xl) 0; }
+
+/* Сетка образцов цвета */
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-md);
+}
+
+.swatch {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.swatch__chip { height: 90px; background: var(--chip-color, var(--color-surface)); }
+
+.swatch__meta {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--fs-sm);
+}
+.swatch__meta code { color: var(--color-text-muted); }
+
+/* Модификаторы — каждый привязан к своему токену из palette.css */
+.swatch__chip--bg            { --chip-color: var(--color-bg); }
+.swatch__chip--surface       { --chip-color: var(--color-surface); }
+.swatch__chip--surface-2     { --chip-color: var(--color-surface-2); }
+.swatch__chip--border        { --chip-color: var(--color-border); }
+.swatch__chip--text          { --chip-color: var(--color-text); }
+.swatch__chip--text-muted    { --chip-color: var(--color-text-muted); }
+.swatch__chip--text-dim      { --chip-color: var(--color-text-dim); }
+.swatch__chip--accent        { --chip-color: var(--color-accent); }
+.swatch__chip--accent-hover  { --chip-color: var(--color-accent-hover); }
+.swatch__chip--gold          { --chip-color: var(--color-gold); }
+.swatch__chip--success       { --chip-color: var(--color-success); }
+.swatch__chip--error         { --chip-color: var(--color-error); }
+
+/* Демонстрация типографики */
+.text-h1 { font-size: var(--fs-4xl); font-weight: 800; }
+.text-h2 { font-size: var(--fs-2xl); font-weight: 700; }
+.text-h3 { font-size: var(--fs-xl);  font-weight: 600; }
+.text-body { font-size: var(--fs-base); }

@@ -1,0 +1,60 @@
+/* Дизайн-токены: цвета, типографика, отступы, радиусы.
+   Подключать ДО style.css на каждой странице. */
+
+:root {
+  /* Фоны */
+  --color-bg:            #0B0B0F;
+  --color-surface:       #1A1A22;
+  --color-surface-2:     #23232D;
+  --color-border:        #2E2E3A;
+
+  /* Текст */
+  --color-text:          #F5F5F7;
+  --color-text-muted:    #A1A1AA;
+  --color-text-dim:      #6B6B76;
+
+  /* Акценты */
+  --color-accent:        #E50914;
+  --color-accent-hover:  #F6121D;
+  --color-gold:          #F5C518;
+
+  /* Состояния */
+  --color-success:       #22C55E;
+  --color-error:         #EF4444;
+
+  /* Типографика */
+  --font-main: "Inter", "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.125rem;
+  --fs-xl:   1.5rem;
+  --fs-2xl:  2rem;
+  --fs-3xl:  2.5rem;
+  --fs-4xl:  3rem;
+  --lh-tight: 1.2;
+  --lh-base:  1.5;
+
+  /* Отступы */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Радиусы */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-pill: 999px;
+
+  /* Сетка */
+  --container-max: 1440px;
+  --container-pad: 24px;
+
+  /* Эффекты */
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --transition:  0.2s ease;
+}
